@@ -12,7 +12,9 @@ class Counter extends Component {
   // }
 
   handleIncrement = () => {
-    console.log("Increment clicked", this);
+    // add an arrow function instead of constructor
+    // console.log("Increment clicked", this);
+    this.setState({ count: this.state.count + 1 });
   };
 
   renderTags() {
