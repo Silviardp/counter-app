@@ -43,7 +43,7 @@ class Counter extends Component {
         {/* {this.state.tags.length === 0 && "Please create a new tag"}
         {this.renderTags()} */}
         <button
-          onClick={this.props.onDelete}
+          onClick={() => this.props.onDelete(this.props.id)}
           className="btn btn-danger btn-sm m-2"
         >
           Delete
